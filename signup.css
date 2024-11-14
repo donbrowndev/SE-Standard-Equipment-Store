@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 16px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif, Helvetica;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar area */
+.logoarea {
+    position: relative;
+    background-color: #333333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#logowrap img {
+    width: 20vh;
+    height: 08vh;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#companyname {
+    position: relative;
+    text-align: center;
+}
+
+#companyname h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#companyname em {
+    font-size: 12px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif, Helvetica;
+    justify-content: center;
+}
+
+.navothers {
+    display: flex;
+    gap: 30px;
+}
+
+.navothers a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    padding: 08px;
+}
+
+.navothers a:hover {
+    border-radius: 05px;
+    background-color: #d5ecff;
+    color: rgb(2, 2, 75);
+}
+
+/* signup background */
+.signupbk {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-width: 100%;
+    z-index: -1;
+}
+/* Section area */
+
+.signuppagecontent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px 200px 20px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.signupleftdiv, .signuprightdiv {
+    width: 50%;
+}
+
+.signupleftdiv h2 {
+    text-align: center;
+    font-size: 60px;
+    color: rgb(6, 6, 71);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.signupleftdiv i {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(67, 3, 3);
+    background-color: rgba(255, 255, 255, 0.661);
+    padding: 10px 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signuprightdiv {
+    text-align: start;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.868);
+    padding: 100px 40px;
+}
+
+#signuplog {
+    font-size: 30px;
+    padding-bottom: 10px; 
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif, Helvetica;
+}
+
+.signuprightdiv h3 {
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif, Helvetica;
+    padding-bottom: 30px;
+    font-weight: 100;
+}
+
+.signupcreatearea label {
+    color: black;
+}
+
+.signupcreatearea input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solic #ccc;
+    border-radius: 5px;
+}
+
+.signupcreatearea button {
+    width: 100%;
+    padding: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.signupcreatearea button:hover {
+    background-color: rgb(93, 93, 250);
+}
+
+.signupcreatearea a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Social media login */
+
+.spp {
+    color: #333333;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10vh 0;
+    margin-bottom: 10px;
+}
+
+.spp::before, .spp::after {
+    content: '''';
+    margin-right: 5px;
+    margin-left: 5px;
+    flex: 1;
+    height: 1px;
+    background: #333333;
+}
+
+.signupsocialbtn {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.signupsocialbtn a {
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+}
+
+
+
+
+/* Footer content */
+
+.footer-detail {
+    background-color: #e1dfe0;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.footer-detail h1 {
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+}
+
+/* Table three format */
+
+.table-3 th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-3 {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-3 td:nth-child(4) {
+    background-color: #333333;
+    color: white;
+}
+
+.table-3 th, td:hover {
+    background-color: #33333352;
+}
+
+footer {
+    position: relative;
+    z-index: 2;
+    background-color: #e1dfe0;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Media reponsive */
+
+@media (max-width: 768px) {
+    .logoarea {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    #logowrap img {
+        width: 15vh;
+        height: 10px;
+    }
+
+    .navothers {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .signuppagecontent {
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+
+    .signupleftdiv, .signuprightdiv {
+        width: 100%;
+    }
+
+    .signupleftdiv h2 {
+        font-size: 40px;
+    }
+
+    .signupleftdiv i {
+        padding: 10px 50px;
+        font-size: 16px;
+    }
+
+    .signupcreatearea input, .signupcreatearea button {
+        padding: 10px;
+    }
+
+    .footer-detail h1 {
+        font-size: 40px;
+    }
+
+    .table-3 th, .table-3 td {
+        padding: 5px;
+    }
+
+    .table-3 {
+        font-size: 12px;
+    }
+
+
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/jpeg" href="browser.jpg">
+    <link rel="stylesheet" href="welcomepage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <title>SC STANDARD</title>
+</head>
+<body>
+    <!-- Header section -->
+    <nav>
+        <div class="logoarea">
+            <div id="logowrap">
+                <img id="companylogo" src="img/logoimg.png" alt="SC STANDARD EQUIPMENT">
+            </div>
+            <div id="companyname">
+                <h3>SE STANDARD EQUIPMENT <br><em>Tools for Non-Standard Living</em> </h3>
+            </div>
+            <div class="navothers">
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="welcomepage.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- video background -->
+     <video autoplay muted loop id="videobackground">
+        <source src="vid/background.mp4" type="video/mp4">
+        <source src="vid/background.mp4" type="video/webm">
+        <source src="vid/background.mp4" type="video/ogg">
+
+     </video>
+     
+
+    <!-- page content -->
+
+    <section class="pagecontent">
+        <div class="leftdiv">
+            <h1><i>Welcome to</i><br>SC STANDARD EQUIPMENT</h1>
+        </div>
+
+        <div class="rightdiv">
+        <p id="log">Login</p>
+        <p id="donthv">Don't have and account yet? <strong><a href="signup.html">Create account</a></strong> </p>
+
+        <div id="error" class="error"></div>
+
+        <div class="loginarea" >
+            <form onsubmit="return validateLogin()" action="homepsc.html" method="get">
+                <div>
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder="Email" autocomplete="on" required autofocus>  
+                </div>
+                <div>
+                    <label for="pwsd"></label>
+                    <input type="password" name="Password" id="pwsd" placeholder="Password" autocomplete="on" required>  
+                </div>
+                    <button type="submit">Sign In</button>
+            </form>
+        </div>
+      
+
+        <div class="remb">
+            <label><input type="checkbox" id="rememberMe">Remember me</label>
+            <a href="#">Forgot Password?</a>
+        </div>
+
+            <div class="line">or With</div>
+            <div class="socialbtn">
+                <a href="#" class="facebook"> <img src="img/facebook.png" alt=""></a>
+                <a href="#" class="twitter"><img src="img/twitter.png" alt=""></a>
+                <a href="#" class="google"> <img src="img/google.png" alt="Google"></a>
+                
+            </div>
+
+         
+        </div>
+    </section>
+
+
+    <!-- Table one -->
+<div>
+    <table class="table-1">
+        <tr class="str">
+            <th colspan="4">Store Equipment</th>
+        </tr>
+        <tr class="headwords">
+            <th>editor's pick,</th>
+            <th>most-liked,</th>
+            <th>most-recent,</th>
+            <th>under <strong>$100 </strong> gifts</th>
+        </tr>
+    </table>
+</div>
+
+<!-- Table area two -->
+<div class="product-item">
+    <table class="table-2">
+        <tr>
+            <th colspan="2"> <img src="img/screws.jpg" alt="Screws"> </th>
+            <th colspan="2"> <img src="img/flaged.jpg" alt="Flanged Ball Valve Assembly"></th>
+            <th colspan="2"> <img src="img/toolswrench.jpg" alt="Tools wrenches and pliers"></th>
+        </tr>
+        <tr>
+            <td>Screws</td>
+            <td>$ 26.00</td>
+            <td>Flanged Ball Valve Assembly</td>
+            <td>$ 45.65</td>
+            <td>Tools wrenches and pliers</td>
+            <td>$ 34.22</td>
+        </tr>
+        <tr>
+            <th colspan="2"> <img src="img/4jawchuckb.jpg" alt="4jawchuck machine tool"> </th>
+            <th colspan="2"> <img src="img/claw.jpg" alt="Claw hammer"></th>
+            <th colspan="2"> <img src="img/piston.jpg" alt="Piston Value"></th>
+        </tr>
+        <tr>
+            <td>4jawchuck machine tool</td>
+            <td>$ 53.30</td>
+            <td>Claw hammer</td>
+            <td>$ 65.32</td>
+            <td>Piston Value</td>
+            <td>$ 84.32</td>
+        </tr>
+        <tr>
+            <th colspan="2"> <img src="img/pipe.jpg" alt="Pipe and flange"> </th>
+            <th colspan="2"> <img src="img/miniature.jpg" alt="Miniature engine block"></th>
+            <th colspan="2"> <img src="img/stirling.jpg" alt="Miniature Stirling engine"></th>
+        </tr>
+        <tr>
+            <td>Pipe and flange</td>
+            <td>$ 15.23</td>
+            <td>Miniature engine block</td>
+            <td>$ 18.10</td>
+            <td>Miniature Stirling engine</td>
+            <td>$ 87.22</td>
+        </tr>
+    </table>
+</div>
+
+<!-- Starting footer -->
+<div class="footer-detail">
+    <h2>STANDARD EQUIPMENT</h2>
+    <hr>
+
+    <!-- Table area three -->
+    <table class="table-3">
+        <tr>
+            <td colspan="1">+1(862)234-2434</td>
+            <td colspan="2">info@scesquipment.com</td>
+            <td colspan="1">Tiktok</td>
+        </tr>
+        <tr>
+            <td>Refund Policy</td>
+            <td>Privacy Terms</td>
+            <td>Shipping Policy</td>
+            <td>DESIGNED BY BROWN</td>
+        </tr>
+    </table>
+</div>
+    <!-- footer content -->
+     <footer>
+        <p>&copy; 2024 SC Standard Equipment. All rights reserved.</p>
+     </footer>
+    
+     <script src="welcomepage.js"></script>
+</body>
+</html>

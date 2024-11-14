@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" type="image/jpeg" href="browser.jpg">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <title>FEST</title>
+</head>
+<body>
+    <!-- Header section -->
+    <nav>
+        <div class="logoarea">
+            <div id="logowrap">
+                <img id="companylogo" src="img/logoimg.png" alt="SC STANDARD EQUIPMENT">
+            </div>
+            <div id="companyname">
+                <h3>SE STANDARD EQUIPMENT <br><em>Tools for Non-Standard Living</em> </h3>
+            </div>
+            <div class="navothers">
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="welcomepage.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- signup background -->
+    <img class="signupbk" src="img/signupbackground.jpg" alt="Dovetail Slide">
+     
+
+
+    <!-- page content -->
+
+    <section class="signuppagecontent">
+        <div class="signupleftdiv">
+            <h2><i>Sign Up for</i><br>SC STANDARD EQUIPMENT</h2>
+        </div>
+
+        <div class="signuprightdiv">
+        <p id="signuplog">Create an account</p>
+        <h3 class="signupshopping">Shopping your easy engineering equipment with us today</h3>
+
+        <form class="signupcreatearea" action="welcomepage.html" method="get">
+        <div>
+            <label for="fname"></label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your First Name" autocomplete="on" required autofocus>  
+        </div>
+        <div>
+            <label for="lname"></label>
+            <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" autocomplete="on" required>  
+        </div>
+        <div>
+            <label for="Middlename"></label>
+            <input type="text" name="Middlename" id="Middlename" placeholder="Enter your Middle Name" autocomplete="on">  
+        </div>
+        <div>
+            <label for="Occupation"></label>
+            <input type="text" name="Occupation" id="Occupation" placeholder="Enter your Occupation" autocomplete="on">  
+        </div>
+        <div>
+            <label for="School"></label>
+            <input type="text" name="School" id="School" placeholder="Enter your School" autocomplete="on">  
+        </div>
+        <div>
+            <label for="dob"></label>
+            <input type="date" name="dob" id="dob" onchange="calculateAge()" max="2024-10-18" autocomplete="on" required>  
+        </div>
+        <div>
+            <label for="email"></label>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email" autocomplete="on" required>  
+        </div>
+        <div>
+            <label for="phone"></label>
+            <input type="tel" name="email" id="phone" placeholder="555-555-5555" autocomplete="on" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">  
+        </div>
+        <div>
+            <label for="pwsd"></label>
+            <input type="password" name="Password" Id="pwsd" placeholder="Password" autocomplete="on" required>  
+        </div>
+
+            <button type="submit">Sign Up</button>
+
+            <div class="spp">or Sign Up with</div>
+
+            <div class="signupsocialbtn">
+                <a href="#" class="facebook"> <img src="img/facebook.png" alt=""></a>
+                <a href="#" class="twitter"><img src="img/twitter.png" alt=""></a>
+                <a href="#" class="google"> <img src="img/google.png" alt="Google"></a>
+            </div>
+         </form>
+        </div>
+    </section>
+
+<!-- Starting footer -->
+<div class="footer-detail">
+    <h1>STANDARD EQUIPMENT</h1>
+    <hr>
+
+    <!-- Table area three -->
+
+    <table class="table-3">
+        <tr>
+            <td colspan="1"> +1(862)234-2434</td>
+            <td colspan="2"> info@scsequipment.com</td>
+            <td colspan="1"> Tiktok</td>
+        </tr>
+        <tr>
+            <td>Refund Policy</td>
+            <td>Privacy Terms</td>
+            <td>Shipping Policy</td>
+            <td>DESIGNED BY BROWN</td>
+        </tr>
+    </table>
+</div>
+    <!-- footer content -->
+     <footer>
+        <p>&copy; 2024 SC Standard Equipment. All rights reserved.</p>
+     </footer>
+    
+</body>
+</html>

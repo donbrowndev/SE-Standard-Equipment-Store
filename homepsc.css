@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-size: 16px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif, Helvetica;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar area */
+.logoarea {
+    position: relative;
+    background-color: #333333;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+#logowrap img {
+    width: 20vh;
+    height: 08vh;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#companyname {
+    position: relative;
+    text-align: center;
+}
+
+#companyname h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+#companyname em {
+    font-size: 12px;
+    font-family: Arial, Verdana, Geneva, Tahoma, sans-serif, Helvetica;
+    justify-content: center;
+}
+
+.navothers {
+    display: flex;
+    gap: 30px;
+    display: inline;
+}
+
+.navothers a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.navothers a:hover {
+    border-radius: 05px;
+    background-color: #d5ecff;
+    color: rgb(2, 2, 75);
+    padding: 10px;
+}
+
+.navothers #bg {
+    background-color: rgb(124, 124, 251);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* page content area */
+
+/* for slide */
+
+.pagecontent {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 50vw;
+    margin: auto;
+    overflow: hidden;
+}
+
+.pagecontent img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+    animation: slide 20s infinite;
+}
+
+
+@keyframes slide {
+    0% { opacity: 1; }
+    20% { opacity: 1;}
+    25% { opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.pagecontent img:nth-child(1) {
+    animation-delay: 0s;
+}
+.pagecontent img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.pagecontent img:nth-child(3) {
+    animation-delay: 10s;
+}
+.pagecontent img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+.pagecontent img:nth-child(5) {
+    animation-delay: 5s;
+}
+
+.homeheading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: whitesmoke;
+    transform: translate(-50%, -50%);
+    background-color: #333333e1;
+    padding: 20px;
+    border-radius: 05px;
+}
+
+.homeheading h2 {
+    font-size: 40px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.homeheading p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.homeheading input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: black;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.homeheading input[type="submit"] {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: rgb(1, 1, 17);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .homeheading h2 {
+        font-size: 36px;
+    }
+
+    .homeheading p {
+        font-size: 24px;
+    }
+
+    .homeheading input[type="text"] {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .homeheading input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+
+/* Table one format */
+
+.table-1 {
+    background-color: #ccc;
+    border-spacing: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    line-height: 60px;
+    border-collapse: separate;
+    border-spacing: 20px 0px;
+}
+
+.str {
+    font-size: 30px;
+    color: #333333;
+    align-items: center;
+    justify-content: center;
+    font-family: "Oleo Script", system-ui;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.headwords {
+    font-size: 25px;
+    color: rgb(146, 82, 5);
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.headwords strong {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: #333333;
+}
+
+td:nth-child(3) {
+    border-spacing: 0;
+}
+
+
+/* Table two format */
+.product-item {
+    background-color: #e1dfe0;
+    padding-bottom: 300px;
+}
+
+.table-2 td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 05px;
+    transition: background-color 0.3s ease-out;
+}
+
+.table-2 td:hover {
+    background-color: #33333344;
+}
+
+.table-2 {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-collapse: separate;
+    /* border-spacing: 20px 0; */
+}
+
+.table-2 th img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    object-fit: cover;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.table-2 img:hover {
+    transform: scale(0.9);
+}
+
+.table-2 td:nth-child(4),
+.table-2 td:nth-child(6),
+.table-2 td:nth-child(2) {
+    background-color: #333333;
+    color: white;
+}
+
+.table-2 img {
+    width: 100%;
+}
+
+/* Footer Table three format */
+
+/* Footer content */
+
+.footer-detail {
+    background-color: #e1dfe0;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.footer-detail h1 {
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+}
+
+/* Table three format */
+
+.table-3 th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-3 {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table-3 td:nth-child(4) {
+    background-color: #333333;
+    color: white;
+}
+
+#infor {
+    color: black;
+    background-color: #e1dfe0;
+}
+
+#pr {
+    color: black;
+    background-color: #e1dfe0;
+}
+
+
+footer {
+    position: relative;
+    z-index: 2;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    background-color: #e1dfe0;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
